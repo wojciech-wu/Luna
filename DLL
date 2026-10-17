@@ -1,0 +1,14 @@
+namespace Olimpia.Luna
+{
+    internal static class Luna
+    {
+        [DllImport("Luna.dll",
+            CallingConvention = CallingConvention.Cdecl)]
+        public static extern float ComputeNeuron(
+            float x1,
+            float x2,
+            float w1,
+            float w2,
+            float bias);
+    }
+}
