@@ -1,0 +1,22 @@
+using Olimpia.Interop;
+
+namespace Olimpia.Core;
+
+public class Neuron
+{
+    public float W1;
+    public float W2;
+    public float Bias;
+
+    public float Compute(
+        float x1,
+        float x2)
+    {
+        return Luna.ComputeNeuron(
+            x1,
+            x2,
+            W1,
+            W2,
+            Bias);
+    }
+}
