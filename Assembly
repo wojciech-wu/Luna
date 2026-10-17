@@ -1,0 +1,20 @@
+; Luna.asm
+
+default rel
+
+section .text
+
+global ComputeNeuron
+
+ComputeNeuron:
+
+    mulss xmm0, xmm2
+    mulss xmm1, xmm3
+
+    addss xmm0, xmm1
+
+    movss xmm4, [rsp+40]
+
+    addss xmm0, xmm4
+
+    ret
