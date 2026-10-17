@@ -1,0 +1,27 @@
+namespace Olimpia.Core;
+
+public class Brain
+{
+    private readonly Layer _layer;
+
+    public Brain()
+    {
+        _layer = new Layer();
+
+        _layer.Neurons.Add(
+            new Neuron
+            {
+                W1 = 0.5f,
+                W2 = 0.8f,
+                Bias = 0.1f
+            });
+    }
+
+    public float Predict(
+        float x1,
+        float x2)
+    {
+        return _layer
+            .Forward(x1,x2)[0];
+    }
+}
