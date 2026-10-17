@@ -3,3 +3,23 @@
      ┌──────────┬───────────────┬────────┬────────┬────────────┬───────────┬─────────┬────────────────────────┐
      │          │               │        │        │            │           │         │                        │
     BOOT    IA-64 ASSEMBLY    KERNEL   MEMORY  INTERRUPTS   SCHEDULER   RUNTIME   LUNA COMPUTE INTERFACE
+
+OLIMPIA
+   │
+   ▼
+LUNA
+   │
+   ├── HIGH / NATIVE COMPUTE
+   │     C# ── C++ ── DLL ── Export
+   │
+   ├── PERFORMANCE
+   │     ASM ── SIMD ── AVX2 ── AVX512
+   │
+   ├── EXECUTION
+   │     Memory Manager ── CPU Scheduler
+   │
+   └── IA-64 EXPERIMENTAL SYSTEM
+          BOOT ──► IA-64 ASM ──► KERNEL ──► MEMORY ──► INTERRUPTS ──► SCHEDULER ──► RUNTIME
+                                                                                         │
+                                                                                         ▼
+                                                                              LUNA COMPUTE INTERFACE
