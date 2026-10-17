@@ -1,0 +1,9 @@
+using Olimpia.Luna;
+
+float result =
+    Luna.ComputeNeuron(
+        2.0f,
+        3.0f,
+        0.5f,
+        0.8f,
+        0.1f);
