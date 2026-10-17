@@ -1,0 +1,25 @@
+extern "C"
+{
+    float LunaNeuron(
+        float x1,
+        float x2,
+        float w1,
+        float w2,
+        float bias);
+}
+
+extern "C" __declspec(dllexport)
+float ComputeNeuron(
+    float x1,
+    float x2,
+    float w1,
+    float w2,
+    float bias)
+{
+    return LunaNeuron(
+        x1,
+        x2,
+        w1,
+        w2,
+        bias);
+}
