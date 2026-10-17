@@ -1,0 +1,14 @@
+using System.Runtime.InteropServices;
+
+namespace Olimpia.Interop;
+
+internal static class Luna
+{
+    [DllImport("Luna.dll")]
+    public static extern float ComputeNeuron(
+        float x1,
+        float x2,
+        float w1,
+        float w2,
+        float bias);
+}
