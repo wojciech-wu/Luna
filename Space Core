@@ -1,0 +1,16 @@
+namespace Olimpia.Core;
+
+public class Layer
+{
+    public List<Neuron> Neurons =
+        new();
+
+    public float[] Forward(
+        float x1,
+        float x2)
+    {
+        return Neurons
+            .Select(n => n.Compute(x1,x2))
+            .ToArray();
+    }
+}
