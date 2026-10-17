@@ -1,0 +1,5 @@
+                                   LUNA IA-64
+                                        │
+     ┌──────────┬───────────────┬────────┬────────┬────────────┬───────────┬─────────┬────────────────────────┐
+     │          │               │        │        │            │           │         │                        │
+    BOOT    IA-64 ASSEMBLY    KERNEL   MEMORY  INTERRUPTS   SCHEDULER   RUNTIME   LUNA COMPUTE INTERFACE
