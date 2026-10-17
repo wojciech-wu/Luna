@@ -1,0 +1,11 @@
+using Olimpia.Core;
+
+Brain brain = new();
+
+float result =
+    brain.Predict(
+        2f,
+        3f);
+
+Console.WriteLine(
+    $"Prediction = {result}");
